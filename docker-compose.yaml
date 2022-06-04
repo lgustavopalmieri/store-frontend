@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  store-frontend:
+    image: store-frontend-image
+    container_name: store-frontend-container
+    restart: on-failure
+    build:
+      context: .
+    env_file:
+      - ./.dev.env
+    ports:
+      - "3002:3002"
+    volumes:
+      - "./public:/store-frontend/public"
+      - "./src:/store-frontend/src"

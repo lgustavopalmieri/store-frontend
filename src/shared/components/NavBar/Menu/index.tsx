@@ -1,13 +1,17 @@
-import * as React from 'react';
 import {useTheme, Box, Button, ClickAwayListener, Grow,MenuItem, MenuList, Paper, Popper,} from "@mui/material";
+import * as React from 'react';
+import { ISubmenu } from '../menu';
+import SubMenu from "../SubMenu";
 
-interface IMenuButtonProps {
-    buttonTitle: string
+interface IMenuProps {
+    title: string
+    submenu: ISubmenu[]
 }
 
-const MenuButton: React.FunctionComponent<IMenuButtonProps> = ({buttonTitle}) => {
-    const theme = useTheme()
-    const [open, setOpen] = React.useState(false);
+
+const Menu: React.FunctionComponent<IMenuProps> = ({ title, submenu }) => {
+  const theme = useTheme()
+  const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef<HTMLButtonElement>(null);
 
   const handleToggle = () => {
@@ -33,16 +37,15 @@ const MenuButton: React.FunctionComponent<IMenuButtonProps> = ({buttonTitle}) =>
       setOpen(false);
     }
   }
-  
-  return (
+  return(
     <Box>
     <Button
-        sx={{ color:theme.palette.secondary.contrastText }}
+      sx={{ color:theme.palette.secondary.contrastText }}
       ref={anchorRef}
       id="composition-button"
       onClick={handleToggle}
     >
-      {buttonTitle}
+      {title}
     </Button>
     <Popper
     open={open}
@@ -71,9 +74,10 @@ const MenuButton: React.FunctionComponent<IMenuButtonProps> = ({buttonTitle}) =>
               aria-labelledby="composition-button"
               onKeyDown={handleListKeyDown}
             >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
-              <MenuItem onClick={handleClose}>Logout</MenuItem>
+              {submenu.map((submenuButtons) => (
+                <SubMenu key={submenuButtons.title} link={submenuButtons.link || '#'} title={submenuButtons.title} />
+              ))}
+             
             </MenuList>
           </ClickAwayListener>
         </Paper>
@@ -81,7 +85,7 @@ const MenuButton: React.FunctionComponent<IMenuButtonProps> = ({buttonTitle}) =>
     )}
     </Popper>
   </Box>
-  );
+  ) ;
 };
 
-export default MenuButton;
+export default Menu;

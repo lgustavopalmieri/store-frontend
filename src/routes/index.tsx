@@ -20,7 +20,7 @@ function AppRoutes () {
         
       <Box width='90%'  margin='auto' marginTop='1rem' flexDirection='column' flex='1' >
         <HeaderPages />
-        <Box  display='flex'  margin='auto' marginTop='1rem' fontSize='1.5rem'>
+        <Box bgcolor='white' display='flex'  margin='auto' marginTop='1rem' fontSize='1.5rem'>
           <Routes>
             <Route path='/home' element={<Home />}>
               <Route path='login' element={<Login />}/>    

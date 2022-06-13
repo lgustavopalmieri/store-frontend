@@ -1,28 +1,28 @@
 [
   {
     "id": "207",
-    "name": "Bananas",
+    "name": "Food & Drink",
     "price": 1.09,
     "description": "This cluster of delicious bananas will keep your hunger down while filling you with nutritious potassium. ",
-    "imageURL": "https://live.staticflickr.com/7013/6612824761_3f66a93c71_b.jpg",
+    "imageURL": "https://images.unsplash.com/photo-1653709341984-ea18163007df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
     "imageAlt": "A single bunch of 4 yellow bananas connected toegher",
     "imageCredit": "\"Bananas (edited)\" by 24oranges.nl is licensed under CC BY-SA 2.0"
   },
   {
     "id": "208",
-    "name": "Chocolates",
+    "name": "MATRIX exit door",
     "price": 9.99,
     "description": "This 3-pack of fine Zotter chocolates comes all the way from Austria and will bring you the comfort and joy you need this very day.",
-    "imageURL": "https://cdn.shopify.com/s/files/1/0386/0293/2356/products/image_2c5617fb-89a7-4d04-9bfb-f0c0dcd28f6d_590x.jpg?v=1612476249",
+    "imageURL": "https://images.unsplash.com/photo-1652964999467-91e0c97c5f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=769&q=80",
     "imageAlt": "3 chocolate bars from Zotter Choclates",
     "imageCredit": "Kari Ferguson, Oh Hello Again 2021"
   },
   {
     "id": "209",
-    "name": "Ice cream",
+    "name": "Delorian",
     "price": 3.49,
     "description": "This is a delicious ice cream cone that will literally melt in your mouth. Enjoy on any warm summer day.",
-    "imageURL": "https://live.staticflickr.com/4162/34323731175_1d163a49ed_b.jpg",
+    "imageURL": "https://images.unsplash.com/photo-1654938900760-1419ee86bc1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "imageAlt": "ice cream cone",
     "imageCredit": "\"ice cream cone\" by sussexcareers is marked under CC0 1.0."
   },
@@ -46,10 +46,10 @@
   },
   {
     "id": "292",
-    "name": "Banananas",
+    "name": "Little Dragon",
     "price": 1.09,
     "description": "This cluster of delicious bananas will keep your hunger down while filling you with nutritious potassium. ",
-    "imageURL": "https://live.staticflickr.com/7013/6612824761_3f66a93c71_b.jpg",
+    "imageURL": "https://images.unsplash.com/photo-1428542244207-0aaec316e609?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "imageAlt": "A single bunch of 4 yellow bananas connected toegher",
     "imageCredit": "\"Bananas (edited)\" by 24oranges.nl is licensed under CC BY-SA 2.0"
   },
@@ -64,10 +64,10 @@
   },
   {
     "id": "56464",
-    "name": "Ice cream",
+    "name": "Heisenber - MIB's dog",
     "price": 3.49,
     "description": "This is a delicious ice cream cone that will literally melt in your mouth. Enjoy on any warm summer day.",
-    "imageURL": "https://live.staticflickr.com/4162/34323731175_1d163a49ed_b.jpg",
+    "imageURL": "https://images.unsplash.com/photo-1469899324414-c72bfb4d4161?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "imageAlt": "ice cream cone",
     "imageCredit": "\"ice cream cone\" by sussexcareers is marked under CC0 1.0."
   },
@@ -82,28 +82,28 @@
   },
   {
     "id": "876",
-    "name": "Candle",
+    "name": "Special nails",
     "price": 20.0,
     "description": "Do not leave this candle burning all night, but enjoy the smell and warm color it provides.",
-    "imageURL": "https://live.staticflickr.com/4222/34089272484_40ab76ce4e_b.jpg",
+    "imageURL": "https://images.unsplash.com/photo-1630019387762-d8b0b31b5fab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",
     "imageAlt": "upclose shot of a lit candle that by Walrus36",
     "imageCredit": "\"Candle\" by Walrus36 is licensed with CC BY 2.0."
   },
   {
     "id": "9087",
-    "name": "Bananas",
+    "name": "2001 Dress-Code",
     "price": 1.09,
     "description": "This cluster of delicious bananas will keep your hunger down while filling you with nutritious potassium. ",
-    "imageURL": "https://live.staticflickr.com/7013/6612824761_3f66a93c71_b.jpg",
+    "imageURL": "https://images.unsplash.com/photo-1654957648532-a462ef607307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "imageAlt": "A single bunch of 4 yellow bananas connected toegher",
     "imageCredit": "\"Bananas (edited)\" by 24oranges.nl is licensed under CC BY-SA 2.0"
   },
   {
     "id": "2456",
-    "name": "Chocolates",
+    "name": "BITCOINS",
     "price": 9.99,
     "description": "This 3-pack of fine Zotter chocolates comes all the way from Austria and will bring you the comfort and joy you need this very day.",
-    "imageURL": "https://cdn.shopify.com/s/files/1/0386/0293/2356/products/image_2c5617fb-89a7-4d04-9bfb-f0c0dcd28f6d_590x.jpg?v=1612476249",
+    "imageURL": "https://images.unsplash.com/photo-1642751227520-32ec1a7a4b11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "imageAlt": "3 chocolate bars from Zotter Choclates",
     "imageCredit": "Kari Ferguson, Oh Hello Again 2021"
   },
@@ -118,19 +118,19 @@
   },
   {
     "id": "87634",
-    "name": "Headphones",
+    "name": "Gepeto grandpa",
     "price": 34.99,
     "description": "Look cool while blocking out the rest of the world.",
-    "imageURL": "https://live.staticflickr.com/5763/22921682035_334b6161c9_b.jpg",
+    "imageURL": "https://images.unsplash.com/photo-1511306162219-1c5a469ab86c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "imageAlt": "Cool looking headphones in gray and black",
     "imageCredit": "\"Headphones in Black and White\" by Image Catalog is marked under CC0 1.0."
   },
   {
     "id": "245637",
-    "name": "Candle",
+    "name": "Caterpie",
     "price": 20.0,
     "description": "Do not leave this candle burning all night, but enjoy the smell and warm color it provides.",
-    "imageURL": "https://live.staticflickr.com/4222/34089272484_40ab76ce4e_b.jpg",
+    "imageURL": "https://images.unsplash.com/photo-1650831491184-f4edf8a1617e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     "imageAlt": "upclose shot of a lit candle that by Walrus36",
     "imageCredit": "\"Candle\" by Walrus36 is licensed with CC BY 2.0."
   }

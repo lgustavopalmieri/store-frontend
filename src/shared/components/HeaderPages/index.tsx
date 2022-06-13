@@ -1,6 +1,7 @@
 import { Box, Breadcrumbs, Link, Typography, useTheme } from '@mui/material';
 import * as React from 'react';
 import { useLocation } from 'react-router-dom';
+import Search from '../Search';
 
 interface IHeaderPagesProps {
 }
@@ -32,10 +33,11 @@ const HeaderPages: React.FunctionComponent<IHeaderPagesProps> = (props) => {
                 </Breadcrumbs>
             </Box>
 
-            <Box sx={{ color:theme.palette.primary.main }} height='100%' margin='auto' marginTop='1rem' fontSize='1.5rem'>
+            <Box sx={{ color:theme.palette.primary.main }} height='100%' margin='auto' marginTop='1rem' fontSize='1.5rem' display='flex' justifyContent='space-between'>
                 <Typography variant="h4" component="div" gutterBottom>
                     { path.slice(-1) === '/' ? formatForEmpty : formatForSlash  } 
                 </Typography>
+                <Search />
             </Box>
         </>
   );

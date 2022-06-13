@@ -1,10 +1,11 @@
 import { Box, Card, CardActions, CardContent, CardHeader, CardMedia, Typography, useTheme } from '@mui/material';
-import React, { useEffect } from "react";
-import { getProducts } from "../../store/Products/api";
+import React, { useEffect, useState } from "react";
+import { getProducts, Product } from "../../store/Products/api";
 import { useAppSelector } from "../../store/hooks";
 import { receivedProducts } from "../../store/Products/productsSlice";
 import { useDispatch } from "react-redux";
 import Search from '../../shared/components/Search';
+import CardComponent from '../../shared/components/Card';
 
 
 interface IHomeProps {
@@ -12,6 +13,8 @@ interface IHomeProps {
 
 const Home: React.FunctionComponent<IHomeProps> = (props) => {
   const theme = useTheme()
+
+  const [search, setSearch] = useState('')
   
   const dispatch = useDispatch()
   useEffect(() => {
@@ -21,33 +24,62 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
   }, []);
 
   const products = useAppSelector(state => state.products.products)
-  
 
-  return (  
-      <Box display='flex' flexWrap='wrap' justifyContent='center'  marginTop='1.5rem'> 
-      {Object.values(products).map((product) => (
-        <Card key={product.id} sx={{ color:theme.palette.secondary.dark, maxWidth:200, maxHeight: 370, margin:'1rem', backgroundColor:theme.palette.primary.contrastText }}>
-          <CardMedia 
-            component="img"
-            height="194"
-            image={product.imageURL} alt={product.imageAlt}
+  const newProducts = Object.values(products).map((product: Product) => product)
+
+  const filteredProducts = newProducts.filter((product: Product) => {
+    return product.name.includes(search)
+  })
+  
+  const [list, setList] = useState(false)
+
+  return ( 
+      <Box   marginTop='1.5rem' >
+        <Box marginLeft='3.8rem'  display='flex' flexWrap='wrap'>
+          <Search
+              value={search}
+              enterKey={(e) => {
+                if (e.keyCode === 13) {
+                  setList(true)
+                }
+              }}
+              handleChange={(e) => {
+                if(e.target.value.length < 1) {
+                  setList(false)
+                }
+                return setSearch(e.target.value.toUpperCase())
+              }}
           />
-          <CardContent sx={{  }}>
-            <Box sx={{ }}>
-              <Typography  sx={{ fontSize:'1.2rem' }}>
-                {product.name.toUpperCase()}
-              </Typography >
-              <Typography sx={{ color:theme.palette.primary.dark,fontSize:'0.8rem' }}>
-                {product.description.substring(0,75)}
-              </Typography>
-            </Box>
-            <CardActions sx={{ fontSize:'1rem' }}>
-              R$ {product.price}
-            </CardActions>
-          </CardContent>
-        </Card>
-        ))}
-      </Box>
+        </Box>
+        <Box display='flex' flexWrap='wrap' justifyContent='center'  marginTop='1.5rem'> 
+          {list === true ? 
+            filteredProducts.map((product) => (
+              <CardComponent 
+              key={product.id}
+              id={product.id}
+              imageCard={product.imageURL}
+              imageURL={product.imageCredit}
+              imageAlt={product.imageAlt}
+              name={product.name}
+              description={product.description}
+              price={product.price}
+            />
+            )) 
+            : newProducts.map((product) => (
+              <CardComponent 
+              key={product.id}
+              id={product.id}
+              imageCard={product.imageURL}
+              imageURL={product.imageCredit}
+              imageAlt={product.imageAlt}
+              name={product.name}
+              description={product.description}
+              price={product.price}
+            />
+            )) 
+          }
+        </Box>
+      </Box> 
   );
 };
 

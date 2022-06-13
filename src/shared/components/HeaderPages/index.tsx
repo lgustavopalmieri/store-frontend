@@ -37,7 +37,7 @@ const HeaderPages: React.FunctionComponent<IHeaderPagesProps> = (props) => {
                 <Typography variant="h4" component="div" gutterBottom>
                     { path.slice(-1) === '/' ? formatForEmpty : formatForSlash  } 
                 </Typography>
-                <Search />
+                
             </Box>
         </>
   );
